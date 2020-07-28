@@ -1,0 +1,28 @@
+{
+  "//1": "",
+  "//2": "",
+  "//3": "",
+  "name": "ro-proxy-cors",
+  "version": "0.0.1",
+  "description": "ro proxy cors",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "cors",
+    "cross",
+    "origin",
+    "ro-proxy-cors"
+  ]
+}
