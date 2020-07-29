@@ -21,8 +21,8 @@ http.createServer((req,res)=>{
       headers['Access-Control-Request-Method']='*';
       headers['Access-Control-Allow-Methods']='OPTIONS, GET';
       headers['Access-Control-Allow-Headers']='*';
-      if(headers['Location'])headers['Location']='https://ro-proxy-cors.glitch.me/'+headers['Location'];
-      if(headers['Refresh']&&headers['Refresh'].toLowerCase().includes('url'))headers['Refresh']=headers['Refresh'].substr(0,headers['Refresh'].substr(headers['Refresh'].toLowerCase().indexOf('url')).indexOf('=')+3)+'https://ro-proxy-cors.glitch.me/'+headers['Refresh'].substr(headers['Refresh'].substr(headers['Refresh'].toLowerCase().indexOf('url')).indexOf('=')+3);
+      if(headers['Location'])headers['Location']='https://cors-proxy-showchat.glitch.me/'+headers['Location'];
+      if(headers['Refresh']&&headers['Refresh'].toLowerCase().includes('url'))headers['Refresh']=headers['Refresh'].substr(0,headers['Refresh'].substr(headers['Refresh'].toLowerCase().indexOf('url')).indexOf('=')+3)+'https://cors-proxy-showchat.glitch.me/'+headers['Refresh'].substr(headers['Refresh'].substr(headers['Refresh'].toLowerCase().indexOf('url')).indexOf('=')+3);
       res.writeHead(resp.statusCode,headers);
       resp.on("end",()=>res.end());
       resp.pipe(res);
