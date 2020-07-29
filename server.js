@@ -2,7 +2,7 @@ var http=require("http");
 http.createServer((req,res)=>{
   if(req.url=="/"){
     res.writeHead(200,{'Content-Type':'text/html'});
-    res.write('<!DOCTYPE html5><html><head><title>Proxy Cors</title><meta name="viewport" content="width=device-width,initial-scale:1.0"/></head><body><h1>Proxy Cors</h1><p>Activați CORS (partajarea resurselor încrucișate) pentru orice adresă URL cu această API simplă și converentă!</p><p>Pentru a utiliza, pur și simplu plasați adresa URL dorită la sfârșitul acestei adrese URL!</p><p>... SAU folosești caseta de mai jos!</p><input type="url" placeholder="Introduceți adresa URL aici!"/><br><button onclick="document.querySelector(\'pre\').textContent=window.location.href+(window.location.href.endsWith(\'/\')?\'\':\'/\')+document.querySelector(\'input\').value;">Obțineți URL-ul activat CORS!</button><br><pre></pre></body></html>');
+    res.write('<!DOCTYPE html5><html><head><title>Proxy Cors www.ShowChat.tk</title><meta name="viewport" content="width=device-width,initial-scale:1.0"/></head><body><h1>Proxy Cors</h1><p>Activați CORS (partajarea resurselor încrucișate) pentru orice adresă URL cu această API simplă și converentă!</p><p>Pentru a utiliza, pur și simplu plasați adresa URL dorită la sfârșitul acestei adrese URL!</p><p>... SAU folosești caseta de mai jos!</p><input type="url" placeholder="Introduceți adresa URL aici!"/><br><button onclick="document.querySelector(\'pre\').textContent=window.location.href+(window.location.href.endsWith(\'/\')?\'\':\'/\')+document.querySelector(\'input\').value;">Obțineți URL-ul activat CORS!</button><br><pre></pre></body></html>');
     res.end();
   }else if(req.url=="/favicon.ico"){res.end();}else{
     if(req.url.startsWith("/about:")){
